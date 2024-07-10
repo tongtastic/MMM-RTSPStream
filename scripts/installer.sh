@@ -39,7 +39,7 @@ else
 fi
 
 # check if we are correct by searching for https://github.com/MichMich/MagicMirror in package.json
-TEST_STRING="\"url\": \"git+https://github.com/MichMich/MagicMirror.git\""
+TEST_STRING="\"url\": \"https://github.com/MagicMirrorOrg/MagicMirror\""
 if grep -sq "$TEST_STRING" "$MM_HOME/package.json"; then
     # we found it
     echo -n ""
